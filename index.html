@@ -53,6 +53,45 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Selected Papers (* equal contribution)</heading>
+          
+          <tr onmouseout="flexround_stop()" onmouseover="flexround_start()" bgcolor="#ffffd0" id="flexround">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='flexround_image'>
+                  <img src='images/FlexRound1.png' width="170">
+                </div>
+                <img src='images/FlexRound2.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function flexround_start() {
+                  document.getElementById('flexround_image').style.opacity = "0";
+                }
+
+                function flexround_stop() {
+                  document.getElementById('flexround_image').style.opacity = "1";
+                }
+                flexround_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:83%;vertical-align:middle">
+              <a target="_blank" href="https://arxiv.org/pdf/2306.00317">
+                <papertitle>FlexRound: Learnable Rounding based on Element-wise Division for Post-Training Quantization</papertitle>
+              </a>
+              <br />
+              <strong>Jung Hyun Lee</strong>*, Jeonghoon Kim*, Se Jung Kwon, Dongsoo Lee
+              <br />
+              <em>International Conference on Machine Learning (ICML)</em>, 2023
+              <br />
+              <a target="_blank" href="https://arxiv.org/pdf/2306.00317">arXiv</a>
+              /
+	            <a target="_blank" href="https://github.com/onliwad101/FlexRound_LRQ">code</a>
+              <p></p>
+              <p>
+                We introduced a new weight-rounding mechanism, <em>FlexRound</em>, which offers more flexible weight quantization based on the magnitude of pre-trained weights than previous PTQ methods. We quantized Llama models for both commonsense reasoning and causal language modeling tasks with both low-bit weight-only quantization and INT8 weight-activation quantization schemes.
+              </p>
+            </td>
+          </tr>
+          
           <!-- <tr id="cpq">
             <td style="padding:5px;width:17%;vertical-align:middle">
               <div class="one">
@@ -85,12 +124,12 @@
               <br />
               <strong>Jung Hyun Lee</strong>*, Jihun Yun*, Sung Ju Hwang, Eunho Yang
               <br />
-              <em>International Conference on Computer Vision (ICCV)</em>, 2024
+              <em>International Conference on Computer Vision (ICCV)</em>, 2021
               <br />
               <a target="_blank" href="https://arxiv.org/pdf/2109.02100">arXiv</a>
               <p></p>
               <p>
-                We formulated <em>Cluster-Promoting Quantization (CPQ)</em>, which promotes cohesive clustering of full-precision weights around quantization grids. In addition, we devised <em>DropBits</em> that drops bits rather than neurons/filters to lower the bias resulting from our multi-class straight-through estimator used in CPQ. We quantized ResNet-18 and MobileNetV2 to low-bit weight-activation quantization on ImageNet.
+                We formulated <em>Cluster-Promoting Quantization (CPQ)</em>, which promotes cohesive clustering of full-precision weights around quantization grids. In addition, we devised <em>DropBits</em> that drops bits rather than neurons/filters to lower the bias resulting from our multi-class straight-through estimator used in CPQ. We quantized ResNet-18 and MobileNetV2 on ImageNet with a low-bit weight-activation quantization.
               </p>
             </td>
           </tr>
