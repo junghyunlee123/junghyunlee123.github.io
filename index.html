@@ -53,18 +53,31 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Selected Papers (* equal contribution)</heading>
-          <tr id="cpq">
-            <!-- <td style="padding:5px;width:17%;vertical-align:middle">
+          <!-- <tr id="cpq">
+            <td style="padding:5px;width:17%;vertical-align:middle">
               <div class="one">
                 <img src='images/CPQ-vertical.png' width="170" height="200">
               </div>
             </td> -->
-            <div class="one">
-              <div class="two" id='cpgq_image'>
-                <img src='images/CPQ1.png' width="170">
+          <tr onmouseout="cpq_stop()" onmouseover="cpq_start()" bgcolor="#ffffd0" id="cpq">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cpq_image'>
+                  <img src='images/CPQ1.png' width="170">
+                </div>
+                <img src='images/CPQ2.png' width="170">
               </div>
-              <img src='images/CPQ2.png' width="170">
-            </div>
+              <script type="text/javascript">
+                function cpq_start() {
+                  document.getElementById('cpq_image').style.opacity = "1";
+                }
+
+                function cpq_stop() {
+                  document.getElementById('cpq_image').style.opacity = "0";
+                }
+                cpq_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:83%;vertical-align:middle">
               <papertitle>Cluster-Promoting Quantization with Bit-Drop for Minimizing Network Quantization Loss</papertitle>
               <br />
