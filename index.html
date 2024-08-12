@@ -54,6 +54,42 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Selected Papers (* equal contribution)</heading>
           
+          <tr onmouseout="peqa_stop()" onmouseover="peqa_start()" bgcolor="#ffffd0" id="peqa">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='peqa_image'>
+                  <img src='images/PEQA1.png' width="170">
+                </div>
+                <img src='images/PEQA2.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function peqa_start() {
+                  document.getElementById('peqa_image').style.opacity = "0";
+                }
+
+                function peqa_stop() {
+                  document.getElementById('peqa_image').style.opacity = "1";
+                }
+                peqa_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:83%;vertical-align:middle">
+              <a target="_blank" href="https://arxiv.org/pdf/2305.14152">
+                <papertitle>Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization</papertitle>
+              </a>
+              <br />
+              Jeonghoon Kim*, <strong>Jung Hyun Lee</strong>*, Sungdong Kim, Joonsuk Park, Kang Min Yoo, Se Jung Kwon, Dongsoo Lee
+              <br />
+              <em>Neural Information Processing Systems (NeurIPS)</em>, 2023
+              <br />
+              <a target="_blank" href="https://arxiv.org/pdf/2305.14152">arXiv</a>
+              <p></p>
+              <p>
+                We introduced a parameter-efficient and quantization-aware adaption technique, PEQA that fine-tunes only quantization step sizes of a quantized large language model to reduce memory usage during fine-tuning and accelerate the inference latency. We applied PEQA to task-specific adaptation with Wikitext2 and PennTreeBank and instruction-tuning on Alpaca for Llama and Llama 2 models.
+              </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="flexround_stop()" onmouseover="flexround_start()" bgcolor="#ffffd0" id="flexround">
             <td style="padding:5px;width:17%;vertical-align:middle">
               <div class="one">
