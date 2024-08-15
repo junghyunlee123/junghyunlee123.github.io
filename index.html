@@ -54,6 +54,44 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Selected Papers (* equal contribution)</heading>
           
+          <tr onmouseout="lrq_stop()" onmouseover="lrq_start()" id="lrq">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lrq_image'>
+                  <img src='images/LRQ1.png' width="170">
+                </div>
+                <img src='images/LRQ2.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function lrq_start() {
+                  document.getElementById('lrq_image').style.opacity = "1";
+                }
+
+                function lrq_stop() {
+                  document.getElementById('lrq_image').style.opacity = "0";
+                }
+                flexround_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:83%;vertical-align:middle">
+              <a target="_blank" href="https://arxiv.org/pdf/2306.00317">
+                <papertitle>LRQ: Optimizing Post-Training Quantization for Large Language Models by Learning Low-Rank Weight-Scaling Matrices</papertitle>
+              </a>
+              <br />
+              <strong>Jung Hyun Lee</strong>*, Jeonghoon Kim*, June Yong Yang, Se Jung Kwon, Eunho Yang, Kang Min Yoo, Dongsoo Lee
+              <br />
+              <em>Under review</em>
+              <br />
+              <a target="_blank" href="https://arxiv.org/pdf/2407.11534">arXiv</a>
+              /
+	            <a target="_blank" href="https://github.com/onliwad101/FlexRound_LRQ">code</a>
+              <p></p>
+              <p>
+                We proposed a new post-training weight quantization method for LLMs, <em>LRQ</em> that learns low-rank weight-scaling matrices in a block-wise manner so as to boost the generalization capability of quantized LLMs. We quantized Llama 2 models with various quantization schemes such as INT8 weight-activation quantization, INT4 weight and INT8 activation quantization, and low-bit weight-only quantizaiton.
+              </p>
+            </td>
+          </tr>
+          
           <tr id="peqa">
             <td style="padding:5px;width:17%;vertical-align:middle">
               <div class="one">
@@ -129,7 +167,7 @@
 	            <a target="_blank" href="https://github.com/onliwad101/FlexRound_LRQ">code</a>
               <p></p>
               <p>
-                We proposed a new weight-rounding mechanism, <em>FlexRound</em>, which offers more flexible weight quantization based on the magnitude of pre-trained weights than previous PTQ methods. We quantized Llama models for both commonsense reasoning and causal language modeling tasks with both low-bit weight-only quantization and INT8 weight-activation quantization schemes.
+                We invented a new weight-rounding mechanism, <em>FlexRound</em>, which offers more flexible weight quantization based on the magnitude of pre-trained weights than previous PTQ methods. We quantized Llama models for both commonsense reasoning and causal language modeling tasks with both low-bit weight-only quantization and INT8 weight-activation quantization schemes.
               </p>
             </td>
           </tr>
@@ -171,7 +209,7 @@
               <a target="_blank" href="https://arxiv.org/pdf/2109.02100">arXiv</a>
               <p></p>
               <p>
-                We formulated <em>Cluster-Promoting Quantization (CPQ)</em>, which promotes cohesive clustering of full-precision weights around quantization grids. On top of that, we devised <em>DropBits</em> that drops bits rather than neurons/filters to lower the bias resulting from our multi-class straight-through estimator used in CPQ. We quantized ResNet-18 and MobileNetV2 on ImageNet with a low-bit weight-activation quantization.
+                We formulated <em>Cluster-Promoting Quantization (CPQ)</em>, which promotes cohesive clustering of full-precision weights around quantization grids. On top of that, we devised <em>DropBits</em> that drops bits rather than neurons/filters to lower the bias resulting from our multi-class straight-through estimator used in CPQ. We quantized ResNet-18 and MobileNetV2 on ImageNet with a low-bit weight-activation quantization scheme.
               </p>
             </td>
           </tr>
