@@ -54,6 +54,48 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Selected Papers (* equal contribution)</heading>
           
+          <tr id="tvm">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <img src='images/TVM.png' width="170">
+              </div>
+            </td>
+          <!-- <tr onmouseout="peqa_stop()" onmouseover="peqa_start()" bgcolor="#ffffd0" id="peqa">
+            <td style="padding:5px;width:17%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='peqa_image'>
+                  <img src='images/PEQA1.png' width="170">
+                </div>
+                <img src='images/PEQA2.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function peqa_start() {
+                  document.getElementById('peqa_image').style.opacity = "1";
+                }
+
+                function peqa_stop() {
+                  document.getElementById('peqa_image').style.opacity = "0";
+                }
+                peqa_stop()
+              </script>
+            </td> -->
+            <td style="padding:20px;width:83%;vertical-align:middle">
+              <a target="_blank" href="https://arxiv.org/pdf/2407.12863">
+                <papertitle>Token-Supervised Value Models for Enhancing Mathematical Reasoning Capabilities of Large Language Models</papertitle>
+              </a>
+              <br />
+              <strong>Jung Hyun Lee</strong>*, June Yong Yang*, Byeongho Heo, Dongyoon Han, Kang Min Yoo
+              <br />
+              <em>In preparation</em>
+              <br />
+              <a target="_blank" href="https://arxiv.org/pdf/2407.12863">arXiv</a>
+              <p></p>
+              <p>
+                We presented <em>token-supervised value models (TVMs)</em>, new token-level verifiers trained to estimate the probability of reaching the correct final answer for each token in a solution
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="lrq_stop()" onmouseover="lrq_start()" id="lrq">
             <td style="padding:5px;width:17%;vertical-align:middle">
               <div class="one">
@@ -129,7 +171,7 @@
               <a target="_blank" href="https://arxiv.org/pdf/2305.14152">arXiv</a>
               <p></p>
               <p>
-                We introduced a quantization-aware parameter-efficient fine-tuning technique, <em>PEQA</em> that fine-tunes only the quantization step sizes of quantized LLMs to (i) reduce both the model size and the number of training parameters during fine-tuning, and (ii) accelerate inference latency after fine-tuning. Therefore, on a single NVIDIA A100-80GB GPU, Llama 65B can be fine-tuned and deployed via PEQA.
+                We introduced a quantization-aware parameter-efficient fine-tuning technique, <em>PEQA</em> that fine-tunes only the quantization step sizes of quantized LLMs to (i) reduce both the model size and the number of training parameters during fine-tuning, and (ii) accelerate inference latency after fine-tuning. Therefore, on a single NVIDIA A100-80GB GPU, Llama 65B can be fine-tuned via PEQA and then accelerated.
               </p>
             </td>
           </tr>
@@ -167,7 +209,7 @@
 	            <a target="_blank" href="https://github.com/onliwad101/FlexRound_LRQ">code</a>
               <p></p>
               <p>
-                We developed a new weight-rounding mechanism, <em>FlexRound</em> that can flexibly quantize pre-trained weights of not only computer vision models but also language models based on the magnitude of each weight. Specifically, Llama models can be quantized via FlexRound with marginal performance degradation on both commonsense reasoning and causal language modeling tasks.
+                We developed a new weight-rounding mechanism, <em>FlexRound</em> that can flexibly quantize pre-trained weights of not only computer vision models but also language models based on the magnitude of each weight. Specifically, Llama models can be quantized via FlexRound with marginal performance degradation on both commonsense reasoning tasks and causal language modeling.
               </p>
             </td>
           </tr>
